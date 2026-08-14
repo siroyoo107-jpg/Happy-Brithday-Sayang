@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Happy Birthday, Arya Enggar Pambudi</title>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <audio autoplay loop>
+    <source src="musik.mp3" type="audio/mpeg">
+</audio>
+
+    <!-- =====================================
+         BACKGROUND BINTANG
+    ====================================== -->
+
+    <div id="stars"></div>
+
+
+
+    <!-- =====================================
+         HALAMAN 1
+         COUNTDOWN
+    ====================================== -->
+
+    <section
+        class="page active"
+        id="countdownPage"
+    >
+
+        <div class="eyebrow">
+            ✦ MENGHITUNG HARI ✦
+        </div>
+
+
+        <h1>
+            Her Special Day
+        </h1>
+
+
+        <h2>
+            is Coming
+        </h2>
+
+
+        <p class="subtitle">
+            Sebentar lagi adalah hari spesialmu.
+        </p>
+
+
+
+        <!-- COUNTDOWN -->
+
+        <div class="countdown">
+
+
+            <div class="time-box">
+
+                <span id="days">
+                    00
+                </span>
+
+                <small>
+                    HARI
+                </small>
+
+            </div>
+
+
+            <div class="colon">
+                :
+            </div>
+
+
+            <div class="time-box">
+
+                <span id="hours">
+                    00
+                </span>
+
+                <small>
+                    JAM
+                </small>
+
+            </div>
+
+
+            <div class="colon">
+                :
+            </div>
+
+
+            <div class="time-box">
+
+                <span id="minutes">
+                    00
+                </span>
+
+                <small>
+                    MENIT
+                </small>
+
+            </div>
+
+
+            <div class="colon">
+                :
+            </div>
+
+
+            <div class="time-box">
+
+                <span id="seconds">
+                    00
+                </span>
+
+                <small>
+                    DETIK
+                </small>
+
+            </div>
+
+
+        </div>
+
+
+
+        <p
+            class="date-label"
+            id="targetLabel"
+        >
+        </p>
+
+
+
+        <button
+            class="main-btn"
+            onclick="nextPage()"
+        >
+            CONTINUE
+        </button>
+
+
+    </section>
+
+
+
+    <!-- =====================================
+         HALAMAN 2
+         HADIAH
+    ====================================== -->
+
+    <section
+        class="page"
+        id="giftPage"
+    >
+
+
+        <div class="eyebrow">
+            ✦ FOR YOU ✦
+        </div>
+
+
+        <h1>
+            A Little Something
+        </h1>
+
+
+        <p class="subtitle">
+            Ada sesuatu untukmu.
+        </p>
+
+
+
+        <!-- KOTAK HADIAH -->
+
+        <div
+            class="gift"
+            onclick="openGift()"
+        >
+
+            <div class="gift-lid"></div>
+
+            <div class="gift-box"></div>
+
+            <div class="ribbon-v"></div>
+
+            <div class="ribbon-h"></div>
+
+            <div class="bow">
+                🎀
+            </div>
+
+        </div>
+
+
+        <p class="gift-text">
+            Klik hadiahnya
+        </p>
+
+
+    </section>
+
+
+
+    <!-- =====================================
+         HALAMAN 3
+         HAPPY BIRTHDAY
+    ====================================== -->
+
+    <section
+        class="page"
+        id="birthdayPage"
+    >
+
+
+        <div class="eyebrow">
+            ✦ 15 AUGUST 2026 ✦
+        </div>
+
+
+        <h1>
+            Happy Birthday
+        </h1>
+
+
+
+        <div class="letter">
+
+
+            <p>
+                <strong>
+                    HAPPY BIRTHDAY,
+                     SAYANGKU♡
+                </strong>
+            </p>
+
+
+            <p>
+                Selamat ulang tahun ya.
+            </p>
+
+
+            <p>
+                Semoga di umur yang baru ini,
+                kamu selalu diberikan kesehatan,
+                dimudahkan dalam setiap urusan,
+                dan semua yang sedang kamu usahakan
+                bisa berjalan dengan baik.
+            </p>
+
+
+            <p>
+                Semoga tahun ini membawa banyak
+                hal baik dan momen-momen yang
+                menyenangkan buat kamu.
+            </p>
+
+
+            <p>
+                Have a great day.
+            </p>
+
+
+        </div>
+
+
+
+        <button
+            class="next-btn"
+            onclick="nextPage()"
+        >
+            NEXT
+        </button>
+
+
+    </section>
+
+
+
+    <!-- =====================================
+         HALAMAN 4
+         MEMORIES
+    ====================================== -->
+
+    <section
+        class="page"
+        id="memoriesPage"
+    >
+
+
+        <div class="eyebrow">
+            ✦ MEMORIES ✦
+        </div>
+
+
+        <h1>
+            Our Memories
+        </h1>
+
+
+        <p class="subtitle">
+            Some moments worth remembering.
+        </p>
+
+
+
+        <!-- FOTO -->
+
+        <div class="polaroids">
+
+
+            <div class="polaroid">
+
+                <img src="foto 1.jpg"
+                    alt="Memory 1"
+                >
+
+                <span>
+                    Memory 01
+                </span>
+
+            </div>
+
+
+
+            <div class="polaroid">
+
+                <img src="foto 2.jpg"
+                    alt="Memory 2"
+                >
+
+                <span>
+                    Memory 02
+                </span>
+
+            </div>
+
+
+
+            <div class="polaroid">
+
+                <img src="foto 3.jpg"
+                    alt="Memory 3"
+                >
+
+                <span>
+                    Memory 03
+                </span>
+
+            </div>
+
+
+
+            <div class="polaroid">
+
+                <img src="foto 4.jpg" 
+                    alt="Memory 4"
+                >
+
+                <span>
+                    Memory 04
+                </span>
+
+            </div>
+
+
+
+            <div class="polaroid">
+
+                <img src="foto 5.jpg"
+                    alt="Memory 5"
+                >
+
+                <span>
+                    Memory 05
+                </span>
+
+            </div>
+
+
+
+            <div class="polaroid">
+
+                <img src="foto 6.jpg"
+                    alt="Memory 6"
+                >
+
+                <span>
+                    Memory 06
+                </span>
+
+            </div>
+
+
+
+            <div class="polaroid">
+
+                <img src="foto 7.jpg"
+                    alt="Memory 7"
+                >
+
+                <span>
+                    Memory 07
+                </span>
+
+            </div>
+
+
+
+            <div class="polaroid">
+
+                <img src="foto 8.jpg"
+                    alt="Memory 8"
+                >
+
+                <span>
+                    Memory 08
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <button
+            class="next-btn"
+            onclick="nextPage()"
+        >
+            NEXT
+        </button>
+
+
+    </section>
+
+
+
+    <!-- =====================================
+         HALAMAN 5
+         VIDEO
+    ====================================== -->
+
+    <section
+        class="page"
+        id="videoPage"
+    >
+
+
+        <div class="eyebrow">
+            ✦ A MOMENT FOR YOU ✦
+        </div>
+
+
+        <h1>
+            A Moment For You
+        </h1>
+
+
+        <p class="subtitle">
+            A little video for your special day.
+        </p>
+
+
+
+        <!-- VIDEO -->
+
+        <div class="video-wrap">
+
+
+            <video autoplay loop muted
+                id="birthdayVideo"
+                controls
+                playsinline
+            >
+
+                <source src="message.mp4"
+                    type="video/mp4"
+                >
+
+            </video>
+
+
+            <div
+                class="video-placeholder"
+                id="videoPlaceholder"
+            >
+
+                <span>
+                    ♡
+                </span>
+
+                <p>
+                    Tambahkan video ke
+                    <br>
+
+                    <b>
+                        video/message.mp4
+                    </b>
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <button
+            class="next-btn"
+            onclick="nextPage()"
+        >
+            NEXT
+        </button>
+
+
+    </section>
+
+
+
+    <!-- =====================================
+         HALAMAN 6
+         PESAN
+    ====================================== -->
+
+    <section
+        class="page"
+        id="messagePage"
+    >
+
+
+        <div class="eyebrow">
+            ✦ A MESSAGE FOR YOU ✦
+        </div>
+
+
+        <h1>
+            For Arya
+        </h1>
+
+
+
+        <div class="letter long-letter">
+
+
+            <p>
+                Selamat ulang tahun sekali lagi, Arya.
+            </p>
+
+
+            <p>
+                Semoga di tahun selanjutnya 
+                aku masih bisa ucapin ulang tahun,
+                semoga di tahun selanjutnya kita masih bersama,
+                biar bisa wujudin keinginan aku ke Merbabu wkwk.
+            </p>
+
+
+            <p>
+                Selalu semangat kerja nya ya, jangan lupa istirahat,
+                Aku akan selalu disini
+                untuk mendukung setiap proses kamu.
+            </p>
+
+
+            <p>
+                Semoga hari-hari kamu selalu bahagia
+                dan selalu sayang dan cinta sama aku
+                sampai selama-lamanya.
+            </p>
+
+
+            <p>
+                Enjoy your day.
+            </p>
+
+
+        </div>
+
+
+
+        <button
+            class="next-btn"
+            onclick="nextPage()"
+        >
+            THE END
+        </button>
+
+
+    </section>
+
+
+
+    <!-- =====================================
+         HALAMAN 7
+         PENUTUP
+    ====================================== -->
+
+    <section
+        class="page"
+        id="endPage"
+    >
+
+
+        <div class="final-heart">
+            ♡
+        </div>
+
+
+        <div class="eyebrow">
+            ✦ HAPPY BIRTHDAY ✦
+        </div>
+
+
+        <h1>
+            Arya Enggar Pambudi
+        </h1>
+
+
+        <p class="final-text">
+
+            15 August 2026
+
+            <br><br>
+
+            Hope you had a great day.
+
+        </p>
+
+
+        <p class="signature">
+
+            With love,
+
+            <br>
+
+            <span>
+                ♡
+            </span>
+
+        </p>
+
+
+        <button
+            class="main-btn"
+            onclick="location.reload()"
+        >
+            ↻ START AGAIN
+        </button>
+
+
+    </section>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
